@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VénAcá</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script type="module" src="index.js"></script>
+</head>
+<body>
+    <header>
+        <h1>VénAcá</h1>
+    </header>
+    <container id="main">
+        <div id="map"></div>
+        <div id="sidebar">
+            <h2>Resultados</h2>
+            <ul id="places"></ul>
+            <button id="more">Cargar más resultados</button>
+            <div id="filter">
+                <select id="placeSelector" class="search" placeholder="Buscar">
+                    <option value="bar">Bar</option>
+                    <option value="bakery">Panadería</option>
+                    <option value="cafe">Café</option>
+                    <option value="car_repair">Taller mecánico</option>
+                    <option value="clothing_store">Tienda de ropa</option>
+                    <option value="electronics_store">Tiendas de electrónica</option>
+                    <option value="establishment">Establecimientos</option>
+                    <option value="food">Comida</option>
+                    <option value="general_contractor">Contratista general</option>
+                    <option value="grocery_or_supermarket">Supermercado</option>
+                    <option value="health">Salud</option>
+                    <option value="home_goods_store">Tiendas del hogar</option>
+                    <option value="park">Parques</option>
+                    <option value="pharmacy">Farmacia</option>
+                    <option value="point_of_interest">Punto de interés</option>
+                    <option value="spa">Spa</option>
+                    <option value="store">Tiendas</option>
+              </select>
+                <button id="filterButton" class="searchButton">Filtrar</button>
+            </div>
+        </div>
+    </container>
+</br>
+    <container id="details">
+    </container>
+
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBpWavQZQXaVclSgvMA4c0dABL2WYzzLV4&callback=initMap&libraries=places&v=weekly" defer></script>
+    <footer>
+        <div id="contact">
+            <h3>Contáctanos</h3>
+            <p>Email: <a href="mailto:venaca.ositoscorp@gmail.com">venaca.ositoscorp@gmail.com</a></p>
+            <p>Instagram: <a href="https://www.instagram.com/venacaoc/" target="_blank">@venacaoc</a></p>
+        </div>
+    </footer>
+</body>
+</html>
